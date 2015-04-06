@@ -50,7 +50,7 @@
 						<a href="http://github.com/leonardosalles" target="_blank" class="social fa fa-github"></a>
 						<a href="http://facebook.com/leosallestm" target="_blank" class="social fa fa-facebook"></a>
 						<a href="http://twitter.com/_leonardosalles" target="_blank" class="social fa fa-twitter"></a><br />
-						<a href="mailto:hi@leonardosalles.com" target="_blank" class="email-brand">hi@leonardosalles.com</a>
+						<a href="mailto:leosallestm@gmail.com" target="_blank" class="email-brand">hi@leonardosalles.com</a>
 					</div>
 				</div>
 			</div>
@@ -145,7 +145,7 @@
 
 				<article>
 					<p class="text-center">
-						I'm 19. I began studying javascript when I was 12 years and fell
+						I'm <span id="age"></span>. I began studying javascript when I was 12 years and fell
 						in love with the language. Currently I have focused my time in 
 						further development of high performance applications and development of 
 						code for programmers not for users because I believe that a system 
@@ -251,6 +251,30 @@
 		<script type="text/javascript" src="assets/plugins/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
 		<script type="text/javascript" src="assets/plugins/jquery.mb.YTPlayer.js"></script>
 		<script async type="text/javascript" src="assets/js/scripts.js"></script>
+
+		<script>
+			function idade(ano_aniversario, mes_aniversario, dia_aniversario) {
+			    var d = new Date,
+			        ano_atual = d.getFullYear(),
+			        mes_atual = d.getMonth() + 1,
+			        dia_atual = d.getDate(),
+			
+			        ano_aniversario = +ano_aniversario,
+			        mes_aniversario = +mes_aniversario,
+			        dia_aniversario = +dia_aniversario,
+			
+			        quantos_anos = ano_atual - ano_aniversario;
+			
+			    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+			        quantos_anos--;
+			    }
+			
+			    return quantos_anos < 0 ? 0 : quantos_anos;
+			}
+			
+			var age = idade(1995, 03, 30);
+			document.querySelector("#age").innerHTML = age;
+		</script>
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
