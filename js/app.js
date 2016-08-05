@@ -36,7 +36,7 @@
 		$translateProvider.preferredLanguage(translates.default);
   		$translateProvider.fallbackLanguage(translates.available);
 
-		$translateProvider.useSanitizeValueStrategy('sanitize');
+		$translateProvider.useSanitizeValueStrategy(null);
 
 		$locationProvider.html5Mode(true);
 		$urlRouterProvider.otherwise('/');
@@ -47,16 +47,47 @@
     });
 })();
 (function () {
-    HomeController.$inject = ["$translatePartialLoader", "$translate"];
+	HomeController.$inject = ["$scope", "$translatePartialLoader", "$translate"];
     angular.module('ls.controllers').controller('HomeController', HomeController);
 
-    function HomeController ($translatePartialLoader, $translate) {
+    function HomeController ($scope, $translatePartialLoader, $translate) {
         var vm = this;
         vm.teste = 'Teste';
-		
+		vm.getAge = getAge;
+
 		$translatePartialLoader.addPart('home');
   		$translate.refresh();
-    }
+
+		vm.age = function (year, month, day) {
+			var d = new Date,
+				actualYear = d.getFullYear(),
+				actualMonth = d.getMonth() + 1,
+				actualDay = d.getDate(),
+
+				year = +year,
+				month = +month,
+				day = +day,
+
+				howOld = actualYear - year;
+
+			if (actualMonth < month || actualMonth == month && actualDay < day) {
+				howOld--;
+			}
+
+			return howOld < 0 ? 0 : howOld;
+		}
+
+		function getAge () {
+			var age = vm.age(1995, 03, 30);
+			$scope.ageTranslation = '{age: ' + age + '}';
+		}
+		
+		emojify.setConfig({
+    		img_dir: 'img/emoji'
+		});
+		
+		emojify.run();
+	}
 })();
 
 (function () {
@@ -76,6 +107,32 @@
     angular.module('ls.core', []);
 })();
 
+(function () {
+	'use strict';
+
+	lsLoading.$inject = ["$http", "$filter"];
+	angular.module('ls.core').directive('lsLoading', lsLoading);
+
+	function lsLoading ($http, $filter) {
+		return {
+			restrict: 'A',
+			replace: true,
+			controller: ["$scope", function ($scope) {
+				$scope.$watchCollection(function () {
+					return $http.pendingRequests;
+				}, function () {
+					var array = $filter('filter')($http.pendingRequests, function (request) {
+						return (request.headers['ls-loading'] === undefined || request.headers['ls-loading']);
+					});
+
+					if (array.length === 0) {
+						window.loading_screen.finish();
+					}
+				}, true);
+			}]
+		}
+	}
+})();
 (function () {
 	'use strict';
 	
