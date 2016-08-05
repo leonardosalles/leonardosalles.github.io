@@ -17,15 +17,39 @@
 		available: ['en-us']
 	};
 
-    angular.module('ls', dependencies).run(["$translate", "$rootScope", function($translate, $rootScope) {
+    angular.module('ls', dependencies).run(["$translate", "$rootScope", "$localStorage", function($translate, $rootScope, $localStorage) {
         $rootScope.setLanguage = function (language) {
 			$translate.use(language);
 			$translate.refresh();
 		};
 
-		var language = window.navigator.userLanguage || window.navigator.language || translates.default;
-		$rootScope.setLanguage(language.toLowerCase());
-		
+		$rootScope.otherLanguage = 'en-us';
+		$rootScope.toggleLanguage = function () {
+			if ($rootScope.otherLanguage === 'en-us') {
+				$rootScope.otherLanguage = 'pt-br';
+				$localStorage.language = 'en-us';
+				$rootScope.setLanguage('en-us');
+			} else if ($rootScope.otherLanguage === 'pt-br') {
+				$rootScope.otherLanguage = 'en-us';
+				$localStorage.language = 'pt-br';
+				$rootScope.setLanguage('pt-br');
+			}
+		}
+
+		var lastLanguage = $localStorage.language;
+
+		if (lastLanguage) {
+			$rootScope.toggleLanguage();
+			$rootScope.setLanguage(lastLanguage);
+		} else {
+			var language = window.navigator.userLanguage || window.navigator.language || translates.default;
+			$rootScope.setLanguage(language.toLowerCase());
+		}
+
+		emojify.setConfig({
+    		img_dir: 'img/emoji'
+		});
+
 		console.log('Running Enzo 1.0.0 - http://leonardosalles.com');
     }])
     .config(["$urlRouterProvider", "$translateProvider", "$translateSanitizationProvider", "$locationProvider", function($urlRouterProvider, $translateProvider, $translateSanitizationProvider, $locationProvider) {
@@ -47,12 +71,11 @@
     });
 })();
 (function () {
-	HomeController.$inject = ["$scope", "$translatePartialLoader", "$translate"];
+	HomeController.$inject = ["$scope", "$translatePartialLoader", "$translate", "$timeout"];
     angular.module('ls.controllers').controller('HomeController', HomeController);
 
-    function HomeController ($scope, $translatePartialLoader, $translate) {
+    function HomeController ($scope, $translatePartialLoader, $translate, $timeout) {
         var vm = this;
-        vm.teste = 'Teste';
 		vm.getAge = getAge;
 
 		$translatePartialLoader.addPart('home');
@@ -81,12 +104,10 @@
 			var age = vm.age(1995, 03, 30);
 			$scope.ageTranslation = '{age: ' + age + '}';
 		}
-		
-		emojify.setConfig({
-    		img_dir: 'img/emoji'
-		});
-		
-		emojify.run();
+
+		$timeout(function () {
+			emojify.run();
+		}, 100);
 	}
 })();
 
