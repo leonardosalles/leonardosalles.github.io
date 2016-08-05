@@ -136,6 +136,25 @@
 
 (function () {
 	'use strict';
+	
+	angular.module('ls.core')
+		.directive('lsMenuToggler', lsMenuToggler)
+		.directive('lsMenuClose', lsMenuToggler);
+
+	function lsMenuToggler () {
+		return {
+			restrict: 'A',
+			link: function (scope, element, attrs) {
+				$(element).click(function (e) {
+					e.preventDefault();
+    				$('#sidebar-wrapper').toggleClass('active');
+				});
+			}
+		};
+	}
+})();
+(function () {
+	'use strict';
 
 	lsLoading.$inject = ["$http", "$filter"];
 	angular.module('ls.core').directive('lsLoading', lsLoading);
@@ -158,25 +177,6 @@
 				}, true);
 			}]
 		}
-	}
-})();
-(function () {
-	'use strict';
-	
-	angular.module('ls.core')
-		.directive('lsMenuToggler', lsMenuToggler)
-		.directive('lsMenuClose', lsMenuToggler);
-
-	function lsMenuToggler () {
-		return {
-			restrict: 'A',
-			link: function (scope, element, attrs) {
-				$(element).click(function (e) {
-					e.preventDefault();
-    				$('#sidebar-wrapper').toggleClass('active');
-				});
-			}
-		};
 	}
 })();
 (function () {
