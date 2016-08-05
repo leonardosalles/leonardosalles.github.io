@@ -22,27 +22,33 @@
 			$translate.use(language);
 			$translate.refresh();
 		};
+		
+		var lang = {
+			'pt-br': 'en-us',
+			'en-us': 'pt-br'
+		};
 
-		$rootScope.otherLanguage = 'en-us';
 		$rootScope.toggleLanguage = function () {
-			if ($rootScope.otherLanguage === 'en-us') {
-				$rootScope.otherLanguage = 'pt-br';
-				$localStorage.language = 'en-us';
-				$rootScope.setLanguage('en-us');
-			} else if ($rootScope.otherLanguage === 'pt-br') {
-				$rootScope.otherLanguage = 'en-us';
-				$localStorage.language = 'pt-br';
-				$rootScope.setLanguage('pt-br');
-			}
-		}
+			var language = lang[$rootScope.actualLanguage];
+			$rootScope.actualLanguage = language;
+			$rootScope.otherLanguage = lang[$rootScope.actualLanguage];
+			$localStorage.language = language;
+
+			$rootScope.setLanguage(language);
+		};
 
 		var lastLanguage = $localStorage.language;
 
 		if (lastLanguage) {
-			$rootScope.toggleLanguage();
+			$rootScope.actualLanguage = lastLanguage;
+			$rootScope.otherLanguage = lang[$rootScope.actualLanguage];
+			$localStorage.language = lastLanguage;
+
 			$rootScope.setLanguage(lastLanguage);
 		} else {
 			var language = window.navigator.userLanguage || window.navigator.language || translates.default;
+			$rootScope.actualLanguage = language.toLowerCase();
+			$rootScope.otherLanguage = lang[$rootScope.actualLanguage];
 			$rootScope.setLanguage(language.toLowerCase());
 		}
 
