@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://leonardosalles.com/'
 
 ############################
 ## LANGUAGE
@@ -36,11 +36,11 @@ outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
 imaging:
-  resampleFilter: lanczos
+  resampleFilter: Lanczos
   quality: 90
-  anchor: smart
+  anchor: Smart
   hint: picture
-timeout: 600000
+timeout: "600s"
 taxonomies:
   author: authors
   tag: tags

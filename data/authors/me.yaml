@@ -2,14 +2,14 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Leonardo Salles
+  given: Leonardo
+  family: Salles
 postnominals: []
 status:
   icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
 role: Full-Stack Developer
-email: alex@example.com
+email: me@leonardosalles.com
 bio: |
   Full-stack developer with 5+ years of experience building scalable web applications.
   Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
@@ -20,14 +20,14 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
+    url: mailto:me@leonardosalles.com
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/alexjohnson
+    url: https://github.com/leonardosalles
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
+    url: https://www.linkedin.com/in/leosallestm/
   - icon: brands/x
-    url: https://x.com/alexjohnson
+    url: https://x.com/leosallestm
 
 interests:
   - Web Development
@@ -93,8 +93,11 @@ skills:
         level: 5
 
 languages:
-  - name: English
+  - name: Portuguese
     level: 5
     label: Native
+  - name: English
+    level: 4
+    label: Advanced
 
 awards: []
