@@ -19,12 +19,14 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Full-Stack Developer"
+    tagline: "Lead Software Engineer"
     # Site meta description for search engines and social sharing
-    description: "Modern developer portfolio showcasing web development projects, technical blog posts, and open source contributions. Built with Hugo Blox."
+    description: |-
+      I'm a Software Engineer who loves building well-structured, high-performance applications — from backend systems to delightful user interfaces.
+      My work is cente
     # Social accounts (used for meta tags like Twitter Cards)
-    social:
-      twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
+    # social:
+      #twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -32,7 +34,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: dark
+    mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "default"
     # Optional: Override theme pack colors
