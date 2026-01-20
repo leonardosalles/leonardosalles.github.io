@@ -31,7 +31,7 @@ sections:
         pause_time: 2500
       cta_buttons:
         - text: View My Work
-          url: "#projects"
+          url: "#tech-sandbox"
           icon: arrow-down
         - text: Get In Touch
           url: "#contact"
@@ -49,14 +49,14 @@ sections:
 
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
-    id: projects
+    id: tech-sandbox
     content:
       title: "Tech Sandbox"
       subtitle: "A selection of all my POCs and experiments"
       count: 0
       filters:
         folders:
-          - projects
+          - tech-sandbox
       buttons:
         - name: All
           tag: "*"
@@ -68,6 +68,8 @@ sections:
           tag: React Native
         - name: Java
           tag: Java
+        - name: AI
+          tag: AI
         - name: Python
           tag: Python
         - name: DevOps
@@ -76,8 +78,6 @@ sections:
           tag: Rust
         - name: Go
           tag: Go
-        - name: AI
-          tag: AI
       default_button_index: 0
       # Archive link auto-shown if more projects exist than 'count' above
       # archive:
@@ -104,22 +104,22 @@ sections:
           items:
             - name: TypeScript
               icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
+            - name: Java
+              icon: devicon/java
             - name: Python
               icon: devicon/python
-            - name: Go
-              icon: devicon/go
+            - name: Rust
+              icon: devicon/rust
         - name: Frontend
           items:
             - name: React
+              icon: devicon/react
+            - name: "React Native"
               icon: devicon/react
             - name: Next.js
               icon: devicon/nextjs
             - name: Tailwind CSS
               icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
         - name: Backend
           items:
             - name: Node.js
@@ -234,7 +234,7 @@ sections:
       text: |-
         I'm always interested in hearing about new projects and opportunities.
         Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+      email: hi@leonardosalles.com
       autolink: true
     design:
       columns: "1"

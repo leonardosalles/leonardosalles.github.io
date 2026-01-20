@@ -9,9 +9,9 @@ postnominals: []
 status:
   icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
 role: Full-Stack Developer
-email: me@leonardosalles.com
+email: hi@leonardosalles.com
 bio: |
-  Full-stack developer with 5+ years of experience building scalable web applications.
+  Full-stack developer with 12+ years of experience building scalable web applications.
   Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
 
 affiliations:
@@ -20,14 +20,14 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:me@leonardosalles.com
+    url: mailto:hi@leonardosalles.com
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/leonardosalles
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/leosallestm/
-  - icon: brands/x
-    url: https://x.com/leosallestm
+  # - icon: brands/x
+    # url: https://x.com/leosallestm
 
 interests:
   - Web Development
@@ -35,18 +35,18 @@ interests:
   - Open Source
   - Developer Experience
 
-education:
-  - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
-    summary: |
-      Focus on software engineering and distributed systems.
-      Senior project on distributed caching systems.
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
+# education:
+#  - degree: B.S. Computer Science
+#    institution: State University
+#    start: 2015-09-01
+#    end: 2019-05-31
+#    summary: |
+#      Focus on software engineering and distributed systems.
+#      Senior project on distributed caching systems.
+#    button:
+#      text: View Project
+#      url: https://github.com/alexjohnson/senior-project
+#      icon: brands/github
 
 experience:
   - role: Senior Software Engineer

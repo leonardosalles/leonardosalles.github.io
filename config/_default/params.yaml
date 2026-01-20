@@ -23,7 +23,9 @@ hugoblox:
     # Site meta description for search engines and social sharing
     description: |-
       I'm a Software Engineer who loves building well-structured, high-performance applications — from backend systems to delightful user interfaces.
-      My work is cente
+      My work is centered around TypeScript, React, React Native, and NestJS, with a strong focus on clean architecture, scalability, and developer experience.
+      
+      I enjoy experimenting with new technologies, building proofs of concept, and sharing insights from the process. Whether it's designing a resilient API, optimizing CI/CD pipelines, or polishing UX flows, I'm always looking for ways to make things simpler, faster, and more maintainable.
     # Social accounts (used for meta tags like Twitter Cards)
     # social:
       #twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
@@ -36,7 +38,7 @@ hugoblox:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    pack: "matcha"
     # Optional: Override theme pack colors
     colors:
       primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
@@ -91,9 +93,9 @@ hugoblox:
     # Menu alignment
     align: center                       # left | center | right
     # Feature toggles
-    search: true
+    search: false
     theme_toggle: true
-    theme_picker: true
+    theme_picker: false
     language_switcher: true
     # Call-to-action button
     cta:
@@ -118,7 +120,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: " {year} {name}. This work is licensed under {license}"
     license:
       type: cc                          # cc | custom
       allow_derivatives: false
@@ -286,7 +288,7 @@ hugoblox:
     # Requires: Pro subscription to support HugoBlox via alternative means
     # Note: Even with Pro, you can keep this false to support open source!
     # Get Pro: https://hugoblox.com/pro
-    hide_attribution: false
+    hide_attribution: true
     
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates

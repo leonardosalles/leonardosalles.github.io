@@ -3,8 +3,8 @@
 #   The weight parameter defines the order that the links appear.
 
 main:
-  - name: Projects
-    url: /#projects
+  - name: Tech Sandbox
+    url: /#tech-sandbox
     weight: 10
   - name: Skills
     url: /#skills
