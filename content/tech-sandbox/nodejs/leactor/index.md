@@ -1,38 +1,29 @@
 ---
-title: "E-Commerce Platform"
-date: 2024-11-15
-summary: "E-commerce API backend with Stripe payments, inventory management, and real-time webhooks"
-tags: 
+title: "Leactor"
+date: 2026-01-10
+summary: "A Reactor Pattern experiment"
+tags:
   - Backend
   - Node.js
   - API
-  - E-Commerce
+  - Reactor
 tech_stack:
   - React
   - TypeScript
   - Node.js
   - Express
-  - PostgreSQL
-  - Stripe
-  - Redis
-  - Docker
+  - Tailwind
 links:
   - type: github
-    url: https://github.com/alexjohnson/ecommerce-platform
+    url: https://github.com/leonardosalles/nodejs-sandbox/tree/main/pocs/reactor
     label: Code
-  - type: live
-    url: https://shop-demo.example.com
-    label: Demo
 featured: true
-status: "Live"
+status: "New"
 role: "Lead Developer"
-duration: "4 months"
-team_size: 2
 highlights:
-  - "Handles 10k+ concurrent users"
-  - "99.9% uptime SLA"
-  - "Processing $50k+ monthly transactions"
-  - "60% faster page load vs competitors"
+  - "Simulates Reactor Pattern"
+  - "Uses API to simualte events"
+  - "Explains Timer in Reactor"
 ---
 
 A modern, scalable e-commerce platform built from scratch with performance and user experience as top priorities.
@@ -44,6 +35,7 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 ## Key Features
 
 ### Customer-Facing
+
 - **Product Catalog** - Dynamic filtering, sorting, and search with instant results
 - **Shopping Cart** - Real-time inventory checking and price calculations
 - **Checkout** - Secure payment processing via Stripe with Apple Pay/Google Pay support
@@ -51,6 +43,7 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - **User Accounts** - Profile management, order history, and saved addresses
 
 ### Admin Dashboard
+
 - **Inventory Management** - Real-time stock tracking and low-stock alerts
 - **Order Management** - Bulk order processing and fulfillment workflow
 - **Analytics** - Sales dashboards, customer insights, and revenue reporting
@@ -59,18 +52,21 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 ## Technical Highlights
 
 ### Performance Optimization
+
 - Implemented Redis caching reducing database queries by 70%
 - Optimized images with WebP format and lazy loading
 - Server-side rendering for critical pages improving SEO and load times
 - CDN integration for global content delivery
 
 ### Scalability
+
 - Microservices architecture allowing independent scaling
 - Horizontal scaling with load balancing
 - Database read replicas for improved query performance
 - Message queues for async processing (order emails, inventory updates)
 
 ### Security
+
 - JWT authentication with refresh tokens
 - Rate limiting to prevent abuse
 - Input validation and sanitization
@@ -93,16 +89,19 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 ## Challenges & Solutions
 
 ### Challenge 1: Inventory Sync
+
 **Problem**: Multiple users buying same product simultaneously causing overselling
 
 **Solution**: Implemented optimistic locking with Redis to ensure inventory accuracy during concurrent purchases
 
 ### Challenge 2: Payment Processing
+
 **Problem**: Handling payment failures gracefully while maintaining order integrity
 
 **Solution**: Built robust state machine for order processing with automatic retry logic and customer notifications
 
 ### Challenge 3: Performance at Scale
+
 **Problem**: Slow page loads during traffic spikes
 
 **Solution**: Implemented multi-layer caching strategy (CDN, Redis, in-memory) and database query optimization
@@ -118,18 +117,21 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 ## Tech Stack Details
 
 **Frontend**
+
 - React 18 with TypeScript
 - Tailwind CSS for styling
 - React Query for data fetching
 - React Hook Form for forms
 
 **Backend**
+
 - Node.js with Express
 - PostgreSQL with Prisma ORM
 - Redis for caching and sessions
 - Bull for job queues
 
 **Infrastructure**
+
 - Docker containers
 - AWS EC2 for hosting
 - AWS S3 for image storage
@@ -137,6 +139,7 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - GitHub Actions for CI/CD
 
 **Payment & Services**
+
 - Stripe for payments
 - SendGrid for emails
 - Sentry for error tracking
@@ -151,7 +154,7 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 
 ## Screenshots
 
-*(Screenshots would go here in production)*
+_(Screenshots would go here in production)_
 
 ## Lessons Learned
 

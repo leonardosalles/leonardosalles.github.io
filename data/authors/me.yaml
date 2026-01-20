@@ -11,12 +11,12 @@ status:
 role: Full-Stack Developer
 email: hi@leonardosalles.com
 bio: |
-  Full-stack developer with 12+ years of experience building scalable web applications.
+  A Software Engineer with 12+ years of experience building scalable web applications.
   Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
 
 affiliations:
-  - name: Tech Corp
-    url: https://techcorp.example.com
+  - name: LendingClub
+    url: https://lendingclub.com
 
 links:
   - icon: at-symbol
@@ -50,24 +50,31 @@ interests:
 
 experience:
   - role: Senior Software Engineer
-    org: Tech Corp
-    start: 2023-01-01
+    org: LendingClub
+    start: 2025-09-01
     summary: |
       Lead development of microservices architecture serving 1M+ users.
       Improved API response time by 40% through optimization.
       Mentored team of 5 junior developers.
-  - role: Full-Stack Developer
-    org: Startup Inc
-    start: 2021-06-01
-    end: 2022-12-31
+  - role: Senior Software Engineer
+    org: Metalab
+    start: 2025-01-01
+    end: 2025-09-31
     summary: |
       Built and deployed 3 production applications from scratch.
       Implemented CI/CD pipeline reducing deployment time by 60%.
       Led migration from monolith to microservices architecture.
-  - role: Junior Developer
-    org: Web Agency
-    start: 2020-01-01
-    end: 2021-05-31
+  - role: Lead Software Engineer
+    org: Truelogic
+    start: 2023-10-01
+    end: 2024-02-28
+    summary: |
+      Developed client websites using React and modern web technologies.
+      Participated in code reviews and agile ceremonies.
+  - role: Lead Software Engineer
+    org: X-Team
+    start: 2021-07-01
+    end: 2023-10-31
     summary: |
       Developed client websites using React and modern web technologies.
       Participated in code reviews and agile ceremonies.

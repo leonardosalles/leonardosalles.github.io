@@ -36,7 +36,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: dark
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "matcha"
     # Optional: Override theme pack colors
@@ -87,14 +87,14 @@ hugoblox:
   header:
     enable: true
     # Header style variant
-    style: navbar                       # navbar | navbar-simple | minimal
+    style: navbar-simple                       # navbar | navbar-simple | minimal
     # Stick to top on scroll
     sticky: true
     # Menu alignment
     align: center                       # left | center | right
     # Feature toggles
     search: false
-    theme_toggle: true
+    theme_toggle: false
     theme_picker: false
     language_switcher: true
     # Call-to-action button
