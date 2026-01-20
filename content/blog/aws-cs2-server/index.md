@@ -1,6 +1,6 @@
 ---
 title: "Automated Counter-Strike 2 Server on AWS and Building a Production-Ready REST API with Node.js and Express"
-date: 2026-12-10
+date: "2026-01-20"
 summary: "Building an automated, on-demand Counter-Strike 2 server system on AWS using AWS CDK, EC2, Lambda, and more, and a comprehensive guide to building scalable, secure REST APIs with proper error handling, validation, and documentation"
 tags:
   - AWS
