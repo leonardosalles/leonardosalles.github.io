@@ -21,7 +21,7 @@ highlights:
 
 ## Overview
 
-This project demonstrates the use of Astro with TypeScript for building modern web applications.
+This project demonstrates the use of ECMAScript 6 features.
 
 ## Tech Stack Details
 
