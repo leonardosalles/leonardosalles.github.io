@@ -8,19 +8,15 @@ name:
 postnominals: []
 status:
   icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
-role: Full-Stack Developer
-email: hi@leonardosalles.com
+role: Senior Software Engineer
+email: leosallestm@gmail.com
 bio: |
   A Software Engineer with 12+ years of experience building scalable web applications.
   Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
 
-affiliations:
-  - name: LendingClub
-    url: https://lendingclub.com
-
 links:
   - icon: at-symbol
-    url: mailto:hi@leonardosalles.com
+    url: mailto:leosallestm@gmail.com
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/leonardosalles
@@ -50,34 +46,34 @@ interests:
 
 experience:
   - role: Senior Software Engineer
-    org: LendingClub
+    org: Reflections Info Systems
     start: 2025-09-01
     summary: |
-      Lead development of microservices architecture serving 1M+ users.
-      Improved API response time by 40% through optimization.
-      Mentored team of 5 junior developers.
+      Develop applications using modern React and TypeScript.
+      Integrate Figma designs into production code.
+      Collaborate with product managers and designers to deliver high-quality features.
   - role: Senior Software Engineer
     org: Metalab
     start: 2025-01-01
     end: 2025-09-31
     summary: |
-      Built and deployed 3 production applications from scratch.
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-      Led migration from monolith to microservices architecture.
+      Building Task Runners using Node.js and TypeScript.
+      Created node.js endpoints using Nest.js.
+      Build, develop and debug devops architecture using AWS CDK.
   - role: Lead Software Engineer
     org: Truelogic
     start: 2023-10-01
     end: 2024-02-28
     summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      Developed UIs for internal tools to manage company resources.
   - role: Lead Software Engineer
     org: X-Team
     start: 2021-07-01
     end: 2023-10-31
     summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      Created apps using React Native.
+      Created SDKs for a Mobile Gaming platform based in React Native.
+      Built UIs for education institutions.
 
 skills:
   - name: Development
