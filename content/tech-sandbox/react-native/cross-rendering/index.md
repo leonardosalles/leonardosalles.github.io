@@ -3,10 +3,11 @@ title: "Cross Rendering"
 date: 2026-01-20
 summary: "Cross Rendering experiment using React Native with HTML"
 tags:
-  - ReactNative
+  - Mobile
   - CrossRendering
 tech_stack:
   - React Native
+  - Expo
 links:
   - type: github
     url: https://github.com/leonardosalles/react-native-sandbox/tree/main/pocs/cross-rendering

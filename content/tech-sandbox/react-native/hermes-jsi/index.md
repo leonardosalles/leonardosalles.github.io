@@ -3,7 +3,7 @@ title: "Hermes JSI"
 date: 2026-01-20
 summary: "Testing Hermes JSI integration with React Native as the new bridge"
 tags:
-  - ReactNative
+  - Mobile
   - Hermes
 tech_stack:
   - React Native
