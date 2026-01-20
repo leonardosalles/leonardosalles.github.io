@@ -64,6 +64,8 @@ sections:
           tag: Node.js
         - name: TypeScript
           tag: TypeScript
+        - name: Frontend
+          tag: Frontend
         - name: React Native
           tag: ReactNative
         - name: Java

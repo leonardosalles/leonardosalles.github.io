@@ -5,6 +5,7 @@ summary: "Demonstrating turbopack as a faster alternative to webpack"
 tags:
   - TypeScript
   - Turbopack
+  - Frontend
 tech_stack:
   - TypeScript
   - Turbopack

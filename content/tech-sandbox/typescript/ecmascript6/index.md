@@ -1,19 +1,18 @@
 ---
-title: "Astro"
+title: "ECMAScript 6"
 date: 2026-01-20
-summary: "Understading Astro island architecture"
+summary: "Understading ECMAScript 6"
 tags:
-  - TypeScript
-  - Astro
-  - Frontend
+  - ECMAScript
 tech_stack:
-  - TypeScript
-  - Astro
+  - JavaScript
+  - ECMAScript
 links:
   - type: github
-    url: https://github.com/leonardosalles/typescript-sandbox/tree/main/pocs/astro
+    url: https://github.com/leonardosalles/typescript-sandbox/tree/main/pocs/ecmascript6
     label: Code
 featured: true
+status: "New"
 role: "Developer"
 highlights:
   - "Key feature 1"
@@ -28,7 +27,7 @@ This project demonstrates the use of Astro with TypeScript for building modern w
 
 **Frontend**
 
-- Astro
+- ECMAScript
 - TypeScript
 
 ## Future Improvements
@@ -38,4 +37,4 @@ This project demonstrates the use of Astro with TypeScript for building modern w
 
 ---
 
-**GitHub**: [View Source Code](https://github.com/leonardosalles/typescript-sandbox/tree/main/pocs/astro)
+**GitHub**: [View Source Code](https://github.com/leonardosalles/typescript-sandbox/tree/main/pocs/ecmascript6)

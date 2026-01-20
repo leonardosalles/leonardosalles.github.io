@@ -5,6 +5,7 @@ summary: "A XMPP chat application built with TypeScript"
 tags:
   - TypeScript
   - XMPP
+  - Frontend
 tech_stack:
   - TypeScript
   - XMPP

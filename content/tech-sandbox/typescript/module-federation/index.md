@@ -5,6 +5,7 @@ summary: "Understading Host and Remotes architecture with Module Federation usin
 tags:
   - TypeScript
   - Module Federation
+  - Frontend
 tech_stack:
   - TypeScript
   - Webpack

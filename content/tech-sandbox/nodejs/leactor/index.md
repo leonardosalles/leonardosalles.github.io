@@ -18,7 +18,6 @@ links:
     url: https://github.com/leonardosalles/nodejs-sandbox/tree/main/pocs/reactor
     label: Code
 featured: true
-status: "New"
 role: "Lead Developer"
 highlights:
   - "Simulates Reactor Pattern"

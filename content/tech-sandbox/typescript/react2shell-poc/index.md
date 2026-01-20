@@ -5,6 +5,7 @@ summary: "A POC to validate and understand React2Shell (CVE-2025-55182) vulnerab
 tags:
   - TypeScript
   - React
+  - Frontend
 tech_stack:
   - TypeScript
   - React
