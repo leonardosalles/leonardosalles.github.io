@@ -25,7 +25,7 @@ sections:
           - "full-stack web apps"
           - "scalable APIs"
           - "beautiful UIs"
-          - "open source tools"
+          - "a lot of POCs"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
