@@ -3,7 +3,7 @@ title: "ECMAScript 6"
 date: 2026-01-20
 summary: "Understading ECMAScript 6"
 tags:
-  - ECMAScript
+  - JavaScript
 tech_stack:
   - JavaScript
   - ECMAScript
