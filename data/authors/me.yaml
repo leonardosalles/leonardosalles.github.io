@@ -55,7 +55,7 @@ experience:
   - role: Senior Software Engineer
     org: Metalab
     start: 2025-01-01
-    end: 2025-09-31
+    end: 2025-09-30
     summary: |
       Building Task Runners using Node.js and TypeScript.
       Created node.js endpoints using Nest.js.
