@@ -17,23 +17,23 @@ hugoblox:
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
-    type: person                        # person | organization | local_business
+    type: person # person | organization | local_business
     # Short tagline displayed on your site
     tagline: "Lead Software Engineer"
     # Site meta description for search engines and social sharing
     description: |-
       I'm a Software Engineer who loves building well-structured, high-performance applications — from backend systems to delightful user interfaces.
       My work is centered around TypeScript, React, React Native, and NestJS, with a strong focus on clean architecture, scalability, and developer experience.
-      
+
       I enjoy experimenting with new technologies, building proofs of concept, and sharing insights from the process. Whether it's designing a resilient API, optimizing CI/CD pipelines, or polishing UX flows, I'm always looking for ways to make things simpler, faster, and more maintainable.
     # Social accounts (used for meta tags like Twitter Cards)
     # social:
-      #twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
+    #twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # THEME
-  # Color and visual design system
-  # ────────────────────────────────────────────────────────────────────────────
+    # ────────────────────────────────────────────────────────────────────────────
+    # THEME
+    # Color and visual design system
+    # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: dark
@@ -41,9 +41,9 @@ hugoblox:
     pack: "minimal"
     # Optional: Override theme pack colors
     colors:
-      primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
       secondary: ""
-      neutral: ""                       # Affects gray utilities (text-gray-*, bg-gray-*)
+      neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
     colors_dark: {}
@@ -78,7 +78,7 @@ hugoblox:
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     spacing: "comfortable"
     # Avatar shape in author profiles
-    avatar_shape: circle                # circle | square | rounded
+    avatar_shape: circle # circle | square | rounded
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
@@ -87,11 +87,11 @@ hugoblox:
   header:
     enable: true
     # Header style variant
-    style: navbar-simple                       # navbar | navbar-simple | minimal
+    style: navbar-simple # navbar | navbar-simple | minimal
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: center                       # left | center | right
+    align: right # left | center | right
     # Feature toggles
     search: false
     theme_toggle: false
@@ -100,7 +100,6 @@ hugoblox:
     # Call-to-action button
     cta:
       enable: false
-      text: ""
       url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -109,10 +108,10 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   footer:
     # Footer style variant
-    style: minimal                      # minimal | columns | centered
+    style: minimal # minimal | columns | centered
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: ""
+    text: "Proudly made in 🇧🇷"
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -122,9 +121,9 @@ hugoblox:
     # Copyright notice - supports {year}, {name}, {license} placeholders
     notice: " {year} {name}. This work is licensed under {license}"
     license:
-      type: cc                          # cc | custom
+      type: cc # cc | custom
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -133,7 +132,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Leonardo Salles | Lead Software Engineer | Mobile | React Native | Expo | React | Typescript | Full-stack | Next.js | Nest.js | MCP | AI"
     # For local_business identity type only
     location:
       address:
@@ -170,7 +169,7 @@ hugoblox:
       enable: true
     # Academic citations (disabled for developer portfolio)
     citations:
-      style: apa                        # apa | mla | chicago | ieee
+      style: apa # apa | mla | chicago | ieee
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEARCH
@@ -189,7 +188,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   comments:
     enable: false
-    provider: ""                        # giscus | disqus
+    provider: "" # giscus | disqus
     giscus:
       repo: ""
       repo_id: ""
@@ -204,9 +203,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
     google:
-      measurement_id: ""                # Google Analytics 4: G-XXXXXXXXXX
+      measurement_id: "" # Google Analytics 4: G-XXXXXXXXXX
     google_tag_manager:
-      container_id: ""                  # GTM-XXXXXXX
+      container_id: "" # GTM-XXXXXXX
     plausible:
       domain: ""
     fathom:
@@ -236,7 +235,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   repository:
     enable: false
-    url: ""                             # e.g., https://github.com/username/repo
+    url: "" # e.g., https://github.com/username/repo
     branch: main
     content_dir: content
 
@@ -245,7 +244,7 @@ hugoblox:
   # Regional formatting preferences
   # ────────────────────────────────────────────────────────────────────────────
   locale:
-    date_format: "Jan 2, 2006"          # Go time format
+    date_format: "Jan 2, 2006" # Go time format
     time_format: "3:04 PM"
     address_format: en-us
 
@@ -257,7 +256,7 @@ hugoblox:
     csp:
       policy: ""
       report_only: false
-    frame_options: allow                 # deny | sameorigin | allow - allow enables iframe embedding
+    frame_options: allow # deny | sameorigin | allow - allow enables iframe embedding
     permissions_policy: ""
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -275,7 +274,7 @@ hugoblox:
   debug:
     enable: false
     hud:
-      position: bottom-left             # top-left | top-right | bottom-left | bottom-right
+      position: bottom-left # top-left | top-right | bottom-left | bottom-right
       opacity: 1.0
     export_logs: true
 
@@ -289,7 +288,7 @@ hugoblox:
     # Note: Even with Pro, you can keep this false to support open source!
     # Get Pro: https://hugoblox.com/pro
     hide_attribution: false
-    
+
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
