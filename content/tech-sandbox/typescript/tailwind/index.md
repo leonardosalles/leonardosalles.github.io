@@ -1,6 +1,6 @@
 ---
 title: "Tailwind"
-date: 2026-01-20
+date: 2026-01-19
 summary: "A store demonstrating tailwind functions with Tokens and CSS variables"
 tags:
   - TypeScript

@@ -1,6 +1,6 @@
 ---
 title: "ECMAScript 6"
-date: 2026-01-20
+date: 2026-01-15
 summary: "Understading ECMAScript 6"
 tags:
   - JavaScript

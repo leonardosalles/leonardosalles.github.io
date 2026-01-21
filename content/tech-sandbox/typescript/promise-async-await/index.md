@@ -1,6 +1,6 @@
 ---
 title: "Promises and Async/Await"
-date: 2026-01-20
+date: 2026-01-16
 summary: "Understading Promises and Async/Await"
 tags:
   - JavaScript
