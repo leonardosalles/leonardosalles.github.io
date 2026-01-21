@@ -17,7 +17,7 @@ sections:
       username: me
       greeting: "Hi, I'm"
       show_status: true
-      show_scroll_indicator: true
+      show_scroll_indicator: false
       typewriter:
         enable: true
         prefix: "I build"
