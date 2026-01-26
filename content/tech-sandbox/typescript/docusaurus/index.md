@@ -14,7 +14,7 @@ links:
     url: https://github.com/leonardosalles/typescript-sandbox/tree/main/pocs/docusaurus
     label: Code
 featured: true
-status: "Cool"
+status: "New"
 role: "Developer"
 highlights:
   - "Key feature 1"
