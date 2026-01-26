@@ -47,6 +47,29 @@ sections:
       spacing:
         padding: ["0", "0", "4rem", "0"]
 
+  # Recent Blog Posts
+  - block: collection
+    id: blog
+    content:
+      title: Recent Posts
+      subtitle: "Thoughts on web development, tech, and more"
+      text: ""
+      filters:
+        folders:
+          - blog
+        exclude_featured: false
+      count: 3
+      order: desc
+    design:
+      view: card
+      columns: 4
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
     id: tech-sandbox
@@ -161,29 +184,6 @@ sections:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-
-  # Recent Blog Posts
-  - block: collection
-    id: blog
-    content:
-      title: Recent Posts
-      subtitle: "Thoughts on web development, tech, and more"
-      text: ""
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
-    design:
-      view: card
-      columns: 3
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
