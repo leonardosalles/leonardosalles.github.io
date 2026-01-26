@@ -27,7 +27,7 @@ ollama pull qwen2.5-coder
 #### 3. Install Claude code
 
 ```
-curl -fsSL https :// claude•ai/install•sh | bash
+curl -fsSL https :// claude.ai/install.sh | bash
 ```
 
 or
