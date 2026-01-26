@@ -5,6 +5,9 @@ summary: "This will help you to setup Claude code locally and use it with zero c
 tags:
   - AI
   - Tutorial
+  - LLM
+  - Agentic
+  - Ollama
 authors:
   - me
 featured: true
